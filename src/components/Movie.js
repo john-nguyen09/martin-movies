@@ -11,9 +11,6 @@ export default function Movie({ movie, movieDetails = {} }) {
   } = movieDetails;
 
   const watchKey = `watch-${movie.id}`;
-  if (movie.id == 566525) {
-    console.log(storage.get(watchKey));
-  }
   const [watched, setWatched] = useState(storage.get(watchKey) || false);
   const toggleWatched = () => {
     const newWatched = !watched;
