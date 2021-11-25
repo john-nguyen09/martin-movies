@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/martin-movies/static/css/main.18a6a555.chunk.css",
-    "main.js": "/martin-movies/static/js/main.ea36ad71.chunk.js",
-    "main.js.map": "/martin-movies/static/js/main.ea36ad71.chunk.js.map",
+    "main.css": "/martin-movies/static/css/main.fcaf5bd9.chunk.css",
+    "main.js": "/martin-movies/static/js/main.28c67292.chunk.js",
+    "main.js.map": "/martin-movies/static/js/main.28c67292.chunk.js.map",
     "runtime-main.js": "/martin-movies/static/js/runtime-main.bb3837a3.js",
     "runtime-main.js.map": "/martin-movies/static/js/runtime-main.bb3837a3.js.map",
     "static/js/2.fb7bc9e9.chunk.js": "/martin-movies/static/js/2.fb7bc9e9.chunk.js",
@@ -10,14 +10,14 @@
     "static/js/3.c35d879a.chunk.js": "/martin-movies/static/js/3.c35d879a.chunk.js",
     "static/js/3.c35d879a.chunk.js.map": "/martin-movies/static/js/3.c35d879a.chunk.js.map",
     "index.html": "/martin-movies/index.html",
-    "static/css/main.18a6a555.chunk.css.map": "/martin-movies/static/css/main.18a6a555.chunk.css.map",
+    "static/css/main.fcaf5bd9.chunk.css.map": "/martin-movies/static/css/main.fcaf5bd9.chunk.css.map",
     "static/js/2.fb7bc9e9.chunk.js.LICENSE.txt": "/martin-movies/static/js/2.fb7bc9e9.chunk.js.LICENSE.txt",
     "static/media/index.scss": "/martin-movies/static/media/movie-collection.859ef552.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.bb3837a3.js",
     "static/js/2.fb7bc9e9.chunk.js",
-    "static/css/main.18a6a555.chunk.css",
-    "static/js/main.ea36ad71.chunk.js"
+    "static/css/main.fcaf5bd9.chunk.css",
+    "static/js/main.28c67292.chunk.js"
   ]
 }
