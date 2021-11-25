@@ -1,0 +1,199 @@
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+);
+
+$primary: #9352b3;
+$dark: #3e4555;
+
+$btn-font-weight: 600;
+
+$font-family-sans-serif: Quicksand, system-ui,
+  // Safari for macOS and iOS (San Francisco)
+  -apple-system,
+  // Windows
+  'Segoe UI',
+  // Android
+  Roboto,
+  // Basic web fallback
+  'Helvetica Neue',
+  Arial,
+  // Linux
+  'Noto Sans',
+  'Liberation Sans',
+  // Sans serif fallback
+  sans-serif,
+  // Emoji fonts
+  'Apple Color Emoji',
+  'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+
+$link-color: inherit;
+
+$link-hover-color: $primary;
+
+$h2-font-size: 2.375rem;
+
+$breadcrumb-divider-color: #fff;
+$breadcrumb-active-color: #b3bbce;
+$breadcrumb-divider: quote('|');
+$breadcrumb-item-padding-x: 1rem;
+
+@import 'bootstrap/scss/bootstrap.scss';
+
+a {
+  transition: all 0.3s ease;
+}
+
+.loading {
+  background-color: #fff;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+
+  .loading-effect {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    .object {
+      background: $primary;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      animation: loading-animation 3s infinite;
+    }
+  }
+}
+
+.page-item {
+  &.disabled {
+    display: none;
+  }
+
+  &:last-child .page-link,
+  .page-link {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 0.35rem;
+    padding: 0;
+    background: transparent;
+    border: none;
+    outline: none;
+
+    &:hover {
+      background: #e7edef;
+    }
+  }
+}
+
+.navbar-brand {
+  .logo {
+    width: 150px;
+  }
+}
+
+.dropdown-menu {
+  display: block;
+  transform: scale(0);
+  transform-origin: 10% top 0;
+  transition: max-height 0s linear 0.15s,
+    opacity 0.1s cubic-bezier(0.39, 0.575, 0.565, 1) 0s,
+    transform 0.15s cubic-bezier(0.1, 1.26, 0.83, 1) 0s;
+  transition-delay: 0.2s;
+  border: 0;
+  border-radius: 3px;
+  box-shadow: 3px 2px 7px 1px rgba(0, 0, 0, 8%);
+}
+
+.nav-item.dropdown {
+  &:hover {
+    .dropdown-menu {
+      transform: scale(1);
+    }
+  }
+}
+
+.dropdown-item {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+@keyframes loading-animation {
+  0% {
+    box-shadow: 0 0 0 rgba(147, 82, 179, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 0 30px rgba(147, 82, 179, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 0 rgba(147, 82, 179, 0.5);
+  }
+}
+
+.py-space {
+  padding-top: 80px !important;
+  padding-bottom: 80px !important;
+}
+
+.py-30 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.py-100 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.btn-rounded {
+  border-radius: 50%;
+}
+
+h2 {
+  font-weight: 400;
+}
+
+h4 {
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+}
+
+#backtotop {
+  position: fixed;
+  opacity: 0;
+  visibility: hidden;
+  bottom: 25px;
+  right: 25px;
+  z-index: 999;
+  transition: 0.35s;
+  transform: scale(0.7);
+
+  &.visible {
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  button {
+    width: 46px;
+    height: 46px;
+  }
+}
+
+@import './components/MovieList.scss';
+@import './components/Movie.scss';
+@import './components/Footer.scss';

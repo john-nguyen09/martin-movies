@@ -1,0 +1,82 @@
+@import 'bootstrap/scss/variables.scss';
+
+.movie-box-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.movie-box {
+  background: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 10px 10px 40px 0 rgba(52, 58, 64, 0.1);
+  transition: all 0.3s ease;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-10px);
+  }
+
+  .inner {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 30px;
+  }
+
+  .star,
+  .title {
+    flex: 0 0 auto;
+  }
+}
+
+.listing-content {
+  flex: 1;
+}
+
+.play-btn {
+  position: absolute;
+  top: -30px;
+  right: 30px;
+
+  .play-video {
+    position: relative;
+    display: block;
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    z-index: 10;
+    transition: all 0.5s ease;
+    background: $primary;
+    box-shadow: 0 10px 30px 0 rgba($primary, 0.7);
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
+
+.listing-image {
+  max-height: 350px;
+  overflow: hidden;
+}
+
+.listing-overview {
+  line-height: 1.5rem;
+  max-height: 1.5rem * 5;
+  overflow: hidden;
+  color: #948a99;
+  flex: 1;
+}
+
+.rating {
+  .fa-star {
+    color: #ffc741;
+  }
+}

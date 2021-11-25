@@ -1,0 +1,32 @@
+.footer {
+  color: #fff;
+  font-weight: 300;
+
+  .tp_recent_tweets {
+    a {
+      color: $primary;
+      font-weight: 700;
+
+      &.twitter_time {
+        color: #999;
+      }
+    }
+  }
+
+  .twitter_time {
+    display: block;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: normal;
+  }
+
+  .widget-title {
+    margin-bottom: 30px;
+  }
+
+  &.bg-dark {
+    .footer-copyright-area {
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
+  }
+}
