@@ -1,4 +1,6 @@
+import { useState } from 'react';
 import { READ_MORE_URL, RES_URL } from '../config';
+import { storage } from '../utils';
 
 export default function Movie({ movie, movieDetails = {} }) {
   const {
@@ -7,6 +9,17 @@ export default function Movie({ movie, movieDetails = {} }) {
     vote_average: voteAverage,
     genres = [],
   } = movieDetails;
+
+  const watchKey = `watch-${movie.id}`;
+  if (movie.id == 566525) {
+    console.log(storage.get(watchKey));
+  }
+  const [watched, setWatched] = useState(storage.get(watchKey) || false);
+  const toggleWatched = () => {
+    const newWatched = !watched;
+    storage.set(watchKey, newWatched, null);
+    setWatched(newWatched);
+  };
 
   const movieUrl = imdbId ? `${READ_MORE_URL}/${imdbId}` : '.';
 
@@ -62,6 +75,23 @@ export default function Movie({ movie, movieDetails = {} }) {
               >
                 Details
               </a>
+
+              <button
+                className="float-end btn btn-link track-watch"
+                onClick={toggleWatched}
+                title="Toggle watched"
+              >
+                <span className={`watch-icon ${watched ? 'hidden' : ''}`}>
+                  <i className="far fa-clock fa-lg"></i>
+                </span>
+                <span
+                  className={`watch-icon text-success ${
+                    watched ? '' : 'hidden'
+                  }`}
+                >
+                  <i className="fas fa-check fa-lg"></i>
+                </span>
+              </button>
             </div>
           </div>
         </div>

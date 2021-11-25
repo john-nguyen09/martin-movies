@@ -31,6 +31,28 @@
   .title {
     flex: 0 0 auto;
   }
+
+  .track-watch {
+    width: 40px;
+    height: 38px;
+    position: relative;
+
+    .watch-icon {
+      transition: max-height 0s linear 0.15s,
+        opacity 0.1s cubic-bezier(0.39, 0.575, 0.565, 1) 0s,
+        transform 0.15s cubic-bezier(0.1, 1.26, 0.83, 1) 0s;
+      transition-delay: 0.2s;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(1);
+
+      &.hidden {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0);
+      }
+    }
+  }
 }
 
 .listing-content {

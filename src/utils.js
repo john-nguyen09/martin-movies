@@ -5,9 +5,9 @@ export const ajax = axios.create({
   baseURL: API_URL,
 });
 
-export const cache = {
+export const storage = {
   set(key, value, durationMs = 30 * 60 * 1000) {
-    const expiresAt = Date.now() + durationMs;
+    const expiresAt = durationMs ? Date.now() + durationMs : null;
     localStorage.setItem(
       key,
       JSON.stringify({
@@ -23,7 +23,7 @@ export const cache = {
       return null;
     }
     item = JSON.parse(item);
-    if (now >= item.expiresAt) {
+    if (item.expiresAt && now >= item.expiresAt) {
       return null;
     }
     return item.value;

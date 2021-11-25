@@ -3,7 +3,7 @@ import ReactPaginate from 'react-paginate';
 import { useParams, useNavigate } from 'react-router';
 import { API_KEY } from '../config';
 import Movie from './Movie';
-import { ajax, cache } from '../utils';
+import { ajax, storage } from '../utils';
 
 const initialMovieDetailsState = {};
 
@@ -59,7 +59,7 @@ export default function MovieList() {
   useEffect(() => {
     const fetchMovieDetails = async (movie) => {
       const cacheKey = `movieDetails-${movie.id}`;
-      let details = cache.get(cacheKey);
+      let details = storage.get(cacheKey);
       if (details === null) {
         const resp = await ajax.get(`/movie/${movie.id}`, {
           params: {
@@ -67,7 +67,7 @@ export default function MovieList() {
           },
         });
         details = resp.data;
-        cache.set(cacheKey, details);
+        storage.set(cacheKey, details);
       }
       dispatchMovieDetails({
         type: 'append',

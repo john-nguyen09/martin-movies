@@ -6,14 +6,15 @@ import {
   faStar,
   faSearch,
   faChevronUp,
+  faCheck,
 } from '@fortawesome/free-solid-svg-icons';
-import { faUser } from '@fortawesome/free-regular-svg-icons';
+import { faUser, faClock } from '@fortawesome/free-regular-svg-icons';
 import { HashRouter } from 'react-router-dom';
 import './index.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-library.add(faPlay, faStar, faSearch, faUser, faChevronUp);
+library.add(faPlay, faStar, faSearch, faUser, faChevronUp, faClock, faCheck);
 
 ReactDOM.render(
   <React.StrictMode>
