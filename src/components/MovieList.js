@@ -93,11 +93,11 @@ export default function MovieList() {
           <div className="inner">
             <h2 className="title">Movie Grid</h2>
             <nav aria-label="breadcrumb">
-              <ol class="breadcrumb">
-                <li class="breadcrumb-item">
+              <ol className="breadcrumb">
+                <li className="breadcrumb-item">
                   <a href=".">Home</a>
                 </li>
-                <li class="breadcrumb-item active" aria-current="page">
+                <li className="breadcrumb-item active" aria-current="page">
                   Movie Grid
                 </li>
               </ol>
@@ -129,7 +129,7 @@ export default function MovieList() {
           <ReactPaginate
             breakLabel="..."
             nextLabel="Next"
-            initialPage={page - 1}
+            initialPage={page}
             onPageChange={handlePageClick}
             pageRangeDisplayed={3}
             marginPagesDisplayed={1}

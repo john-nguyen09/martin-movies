@@ -2,25 +2,25 @@ import logoWhite from '../images/logo-white.png';
 
 export default function Footer() {
   return (
-    <footer class="footer bg-dark">
-      <div class="footer-widget-area py-100">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-3 col-md-6 col-sm-12">
-              <div class="widget widget-blog widget_text">
+    <footer className="footer bg-dark">
+      <div className="footer-widget-area py-100">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-3 col-md-6 col-sm-12">
+              <div className="widget widget-blog widget_text">
                 {' '}
-                <div class="textwidget">
+                <div className="textwidget">
                   <p>
                     <img
                       loading="lazy"
-                      class="alignnone wp-image-93"
+                      className="alignnone wp-image-93"
                       src={logoWhite}
                       alt=""
                       width="110"
                       height="28"
                     />
                   </p>
-                  <p class="nomargin">
+                  <p className="nomargin">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Itaque, ducimus, atque. Praesentium suscipit provident
                     explicabo dignissimos nostrum numquam deserunt earum
@@ -30,10 +30,10 @@ export default function Footer() {
               </div>{' '}
             </div>
 
-            <div class="col-lg-3 col-md-6 col-sm-12">
-              <div class="widget widget-blog widget_tp_widget_recent_tweets">
-                <h4 class="widget-title">Twitter Feed</h4>
-                <div class="tp_recent_tweets">
+            <div className="col-lg-3 col-md-6 col-sm-12">
+              <div className="widget widget-blog widget_tp_widget_recent_tweets">
+                <h4 className="widget-title">Twitter Feed</h4>
+                <div className="tp_recent_tweets">
                   <ul>
                     <li>
                       <span>
@@ -55,7 +55,7 @@ export default function Footer() {
                         </a>
                         … <a href=".">https://t.co/fejbhJzBWg</a>
                       </span>
-                      <a class="twitter_time" href=".">
+                      <a className="twitter_time" href=".">
                         20 days ago
                       </a>
                     </li>
@@ -64,38 +64,38 @@ export default function Footer() {
               </div>{' '}
             </div>
 
-            <div class="col-lg-3 col-md-6 col-sm-12">
-              <div class="widget widget-blog widget_nav_menu">
-                <h4 class="widget-title">Useful Links</h4>
-                <div class="menu-footer-top-container">
-                  <ul id="menu-footer-top" class="menu">
+            <div className="col-lg-3 col-md-6 col-sm-12">
+              <div className="widget widget-blog widget_nav_menu">
+                <h4 className="widget-title">Useful Links</h4>
+                <div className="menu-footer-top-container">
+                  <ul id="menu-footer-top" className="menu">
                     <li
                       id="menu-item-587"
-                      class="menu-item menu-item-type-custom menu-item-object-custom menu-item-587"
+                      className="menu-item menu-item-type-custom menu-item-object-custom menu-item-587"
                     >
                       <a href=".">About Movify</a>
                     </li>
                     <li
                       id="menu-item-588"
-                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-588"
+                      className="menu-item menu-item-type-post_type menu-item-object-page menu-item-588"
                     >
                       <a href=".">Blog</a>
                     </li>
                     <li
                       id="menu-item-590"
-                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-590"
+                      className="menu-item menu-item-type-post_type menu-item-object-page menu-item-590"
                     >
                       <a href=".">Contact Us</a>
                     </li>
                     <li
                       id="menu-item-589"
-                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-589"
+                      className="menu-item menu-item-type-post_type menu-item-object-page menu-item-589"
                     >
                       <a href=".">Testimonials</a>
                     </li>
                     <li
                       id="menu-item-591"
-                      class="menu-item menu-item-type-custom menu-item-object-custom menu-item-591"
+                      className="menu-item menu-item-type-custom menu-item-object-custom menu-item-591"
                     >
                       <a href=".">Error 404</a>
                     </li>
@@ -104,12 +104,12 @@ export default function Footer() {
               </div>{' '}
             </div>
 
-            <div class="col-lg-3 col-md-6 col-sm-12">
-              <div class="widget widget-blog null-instagram-feed">
-                <h4 class="widget-title">Instagram</h4>Instagram has returned
-                invalid data.
-                <p class="clear">
-                  <a href="." rel="me" class="">
+            <div className="col-lg-3 col-md-6 col-sm-12">
+              <div className="widget widget-blog null-instagram-feed">
+                <h4 className="widget-title">Instagram</h4>Instagram has
+                returned invalid data.
+                <p className="clear">
+                  <a href="." rel="me" className="">
                     Follow Us!
                   </a>
                 </p>
@@ -118,29 +118,29 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div class="footer-copyright-area py-30">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="d-flex">
-                <div class="links">
-                  <ul id="menu-footer-menu" class="list-inline">
-                    <li class="list-inline-item menu-item menu-item-type-custom menu-item-object-custom">
+      <div className="footer-copyright-area py-30">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-12">
+              <div className="d-flex">
+                <div className="links">
+                  <ul id="menu-footer-menu" className="list-inline">
+                    <li className="list-inline-item menu-item menu-item-type-custom menu-item-object-custom">
                       <a href=".">Privacy &amp; Cookies</a>
                     </li>
-                    <li class="list-inline-item menu-item menu-item-type-custom menu-item-object-custom">
+                    <li className="list-inline-item menu-item menu-item-type-custom menu-item-object-custom">
                       <a href=".">Terms &amp; Conditions</a>
                     </li>
-                    <li class="list-inline-item menu-item menu-item-type-custom menu-item-object-custom">
+                    <li className="list-inline-item menu-item menu-item-type-custom menu-item-object-custom">
                       <a href=".">Legal Disclaimer</a>
                     </li>
-                    <li class="list-inline-item menu-item menu-item-type-custom menu-item-object-custom">
+                    <li className="list-inline-item menu-item menu-item-type-custom menu-item-object-custom">
                       <a href=".">Community</a>
                     </li>
                   </ul>{' '}
                 </div>
 
-                <div class="copyright ms-auto">
+                <div className="copyright ms-auto">
                   Copyright 2020.KlbTheme . All rights reserved{' '}
                 </div>
               </div>
