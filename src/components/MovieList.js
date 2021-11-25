@@ -129,7 +129,7 @@ export default function MovieList() {
           <ReactPaginate
             breakLabel="..."
             nextLabel="Next"
-            initialPage={page}
+            forcePage={page - 1}
             onPageChange={handlePageClick}
             pageRangeDisplayed={3}
             marginPagesDisplayed={1}
